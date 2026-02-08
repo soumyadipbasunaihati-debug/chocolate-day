@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Chocolate Day 🍫</title>
+
+  <!-- Romantic Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<!-- PASSWORD -->
+<div id="passwordScreen" class="screen">
+  <h2>🔐 Sweet Password</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Unlock 🍫</button>
+  <p id="error"></p>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="screen hidden">
+  <p class="cute-text">
+    Your Headache wants to feed you a Chocolate 🍫<br><br>
+    Do you wanna accept the chocolate, mam !?
+  </p>
+  <button onclick="acceptChocolate()">Yes 😋</button>
+  <button id="noBtn" onclick="noTrick()">No 🙄</button>
+</div>
+
+<!-- CHOCOLATE -->
+<div id="chocoScene" class="screen hidden">
+  <h2>Open your mouth 😛</h2>
+  <img src="choco/choco1.png" id="chocolate">
+  <p class="hint">Say "ummm" or make eating sound 🍫</p>
+</div>
+
+<!-- LOVE -->
+<div id="loveScreen" class="screen hidden">
+  <h1>I Love You ❤️</h1>
+  <p class="final-text">You ate my whole heart 🍫🥺</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
